@@ -33,7 +33,7 @@ app.use(express.json())
 
 // const cors = require('cors')
 // Default using:
-// app.use(cors())
+app.use(cors())
 // Default options:
 // app.use(cors({
 //     "origin": "*",
@@ -61,9 +61,9 @@ app.use(express.json())
 */
 
 // app.use(require('cors')()) // Run with defaults.
-app.use(require('cors')({
-    origin: ["http://localhost:3000", "http://localhost:4173", "http://localhost:5173"]
-}))
+// app.use(require('cors')({
+//     origin: ["http://localhost:3000", "http://localhost:4173", "http://localhost:5173"]
+// }))
 
 // Call static uploadFile:
 app.use('/upload', express.static('./upload'))

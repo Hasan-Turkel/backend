@@ -24,13 +24,11 @@ const redoc = require("redoc-express");
 router.use("/redoc", redoc({ specUrl: "/documents/json", title: "API Docs" }));
 
 // Swagger:
-const CSS_URL =
-  "https://cdnjs.cloudflare.com/ajax/libs/swagger-ui/4.1.0/swagger-ui.min.css"
 const swaggerUi = require("swagger-ui-express");
 router.use(
   "/swagger",
   swaggerUi.serve,
-  swaggerUi.setup(require("../configs/swagger.json"), { customCssUrl: CSS_URL }, {
+  swaggerUi.setup(require("../configs/swagger.json"), {
     swaggerOptions: { persistAuthorization: true },
   })
 );
