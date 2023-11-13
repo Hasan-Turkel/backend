@@ -31,7 +31,7 @@ app.use(express.json())
 // https://expressjs.com/en/resources/middleware/cors.html
 // npm i cors
 
-// const cors = require('cors')
+const cors = require('cors')
 // Default using:
 app.use(cors())
 // Default options:
