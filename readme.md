@@ -5,4 +5,4 @@ Stock app is a product managament system that you can make crud process. And thi
 
 ## This is how the site looks like.
 
-![./stockapp.jpeg](./stockapp.jpeg)
+![./stockapp.jpg](./stockapp.jpg)
